@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+  overflow: hidden;
+}
+
+.app {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+  padding: 50px 0;
+  background: url("../img/bg_main.jpg") center/cover no-repeat;
+}
+.app .boards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.app .boards__item {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-self: baseline;
+  max-width: 250px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0 15px;
+  padding: 10px;
+  transition: 0.3s all ease;
+  border-radius: 3px;
+}
+.app .boards__item .title {
+  padding: 5px;
+  color: aliceblue;
+}
+.app .boards__item .title :focus {
+  outline: 1 px solid rgba(168, 168, 168, 0.45);
+}
+.app .boards__item .list {
+  min-height: 40px;
+}
+.app .boards__item .list__item {
+  background-color: aliceblue;
+  border-radius: 3px;
+  padding: 10px;
+  text-align: center;
+  margin: 4px 0;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 14;
+  outline: none;
+  border: none;
+}
+.app .boards__item .form {
+  display: none;
+  border-radius: 3px;
+  margin-top: auto;
+}
+.app .boards__item .form .textarea {
+  resize: none;
+  height: 60px;
+  border-radius: 3px;
+  border: none;
+  background-color: aliceblue;
+  padding: 10px;
+  width: 100%;
+}
+.app .boards__item .form .textarea:focus {
+  outline: none;
+}
+.app .boards__item .form .buttons {
+  display: flex;
+}
+.app .boards__item .form .buttons .add__item-btn {
+  background: rgb(76, 169, 249);
+  border: none;
+  height: 35px;
+  cursor: pointer;
+  color: aliceblue;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  width: 100%;
+}
+.app .boards__item .form .buttons .cancel__item-btn {
+  padding: 0 10px;
+  background: rgb(160, 17, 12);
+  border: none;
+  height: 35px;
+  cursor: pointer;
+  color: aliceblue;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75px;
+  margin-left: auto;
+}
+.app .boards__item .add__btn {
+  height: 30px;
+  border-radius: 3px;
+  cursor: pointer;
+  background: rgba(59, 57, 57, 0.3);
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  color: aliceblue;
+}
+.app .boards__item .add__btn span {
+  font-size: 20px;
+  color: aliceblue;
+  margin: 10px;
+}
+.app .add__board-btn {
+  height: 30px;
+  border-radius: 3px;
+  cursor: pointer;
+  color: aliceblue;
+  background: rgba(76, 169, 249, 0.45);
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  position: absolute;
+  width: 150px;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 14px;
+}/*# sourceMappingURL=main.css.map */
